@@ -20,7 +20,7 @@
         <!-- Nome-->
         <br /><br />
         <label for="">Nome Completo</label><br />
-        <input type="text" placeholder="Insira o seu nome Completo" />
+        <input type="text" placeholder="Insira seu nome Completo" />
        
         <!-- Sexo-->
         <br /><br />
@@ -28,26 +28,32 @@
         <input type="checkbox" name="" id="masculino" value="masculino" />
         <label for="fundador">Masculino</label>
         <input type="checkbox" name="" id="feminino" value="femenino" />
-        <label for="efetivo">Femenino</label>
+        <label for="efetivo">Feminino</label>
         <!-- Estado Civil-->
         <br /><br />
         <label for="">Estado Civil</label>
-        <input type="text" name="" id="estado_civil" />
+          <select id="estado_civil" name="estado_civil">
+          <option value="solteiro">Solteiro(a)</option>
+          <option value="casado">Casado(a)</option>
+          <option value="divorciado">Divorciado(a)</option>
+          <option value="viuvo">Viúvo(a)</option>
+        </select>
+      
 
         <!-- RG-->
         <br /><br />
         <label for="">RG</label>
-        <input type="text" name="" id="rg" />
+        <input type="text" name="" id="rg" placeholder="99.999-99"/>
 
         <!-- CPF-->
         <br /><br />
         <label for="">CPF</label>
-        <input type="text" name="" id="cpf" />
+        <input type="text" name="" id="cpf"placeholder="999.999.999-99" />
 
         <!-- Data de Nascimento-->
         <br /><br />
         <label for="">Data de Nascimento :</label>
-        <input type="text" name="" id="data_nascimento" />
+        <input type="text" name="" id="data_nascimento" placeholder="DD/MM/AAAA"/>
         <!-- Nascionalidade -->
         <br /><br />
         <label for="">Nacionalidade:</label>
@@ -59,15 +65,15 @@
         <!-- CEP -->
         <br /><br />
         <label for="">CEP</label>
-        <input type="text" name="" id="cep" />
+        <input type="text" name="" id="cep" placeholder="99.999-999"/>
         <!-- Cidade -->
         <br /><br />
         <label for="">Cidade</label>
-        <input type="text" name="" id="cidade" />
+        <input type="text" name="" id="cidade" placeholder="Insira sua cidade"/>
         <!-- Estado -->
         <br /><br />
         <label for="">Estado</label>
-        <input type="text" name="" id="estado" />
+        <input type="text" name="" id="estado" placeholder="Insira seu estado"/>
         <!-- Telefone Residencial com DDD -->
         <br /><br />
         <label for="">Telefone Residencial (DDD)</label>
@@ -87,7 +93,7 @@
         <legend>Dados Profissionais</legend>
 
         <!-- Órgão/Empresa-->
-        <br />
+        <br /><br />
         <label for="">Órgão/Empresa: </label>
         <input type="text" placeholder="Insira o órgão/empresa"/>
         <!-- Endereço-->
