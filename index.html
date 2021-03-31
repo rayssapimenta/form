@@ -20,74 +20,129 @@
         <!-- Nome-->
         <br /><br />
         <label for="">Nome Completo</label><br />
-        <input type="text" placeholder="Insira o seu nome Completo" />
+        <input type="text" placeholder="Insira seu nome Completo" />
        
         <!-- Sexo-->
         <br /><br />
         <label for="">Sexo: </label>
         <input type="checkbox" name="" id="masculino" value="masculino" />
-        <label for="fundador">Masculino</label>
-        <input type="checkbox" name="" id="feminino" value="femenino" />
-        <label for="efetivo">Femenino</label>
+        <label for="masculino">Masculino</label>
+        <input type="checkbox" name="" id="feminino" value="feminino" />
+        <label for="feminino">Feminino</label>
         <!-- Estado Civil-->
         <br /><br />
         <label for="">Estado Civil</label>
-        <input type="text" name="" id="estado_civil" />
+          <select id="estado_civil" name="estado_civil">
+          <option value="solteiro">Solteiro(a)</option>
+          <option value="casado">Casado(a)</option>
+          <option value="divorciado">Divorciado(a)</option>
+          <option value="viuvo">Viúvo(a)</option>
+        </select>
+      
 
         <!-- RG-->
         <br /><br />
         <label for="">RG</label>
-        <input type="text" name="" id="rg" />
+        <input type="number" name="" id="rg" placeholder="99.999-99"/>
 
         <!-- CPF-->
         <br /><br />
         <label for="">CPF</label>
-        <input type="text" name="" id="cpf" />
+        <input type="number" name="" id="cpf"placeholder="999.999.999-99" />
 
         <!-- Data de Nascimento-->
         <br /><br />
         <label for="">Data de Nascimento :</label>
-        <input type="text" name="" id="data_nascimento" />
+        <input type="date" value="yyyy-mm-dd" name="" id="data_nascimento" />
         <!-- Nascionalidade -->
         <br /><br />
         <label for="">Nacionalidade:</label>
-        <input type="text" name="" id="nacionalidade" />
+        <input type="text" name="" id="nacionalidade" placeholder="Insira sua nacionalidade" />
         <!-- Endereço -->
         <br /><br />
         <label for="">Endereço:</label>
-        <input type="text" name="" id="endereco" />
+        <input type="text" name="" id="endereco" placeholder="Insira seu endereço"/>
         <!-- CEP -->
         <br /><br />
         <label for="">CEP</label>
-        <input type="text" name="" id="cep" />
+        <input type="number" name="" id="cep" placeholder="99.999-999"/>
         <!-- Cidade -->
         <br /><br />
         <label for="">Cidade</label>
-        <input type="text" name="" id="cidade" />
+        <input type="text" name="" id="cidade" placeholder="Insira sua cidade"/>
         <!-- Estado -->
         <br /><br />
         <label for="">Estado</label>
-        <input type="text" name="" id="estado" />
+        <input type="text" name="" id="estado" placeholder="Insira seu estado"/>
         <!-- Telefone Residencial com DDD -->
         <br /><br />
         <label for="">Telefone Residencial (DDD)</label>
-        <input type="text" name="" id="telefone_residencial" />
+        <input type="text" name="" id="telefone_residencial" placeholder="(99) 9999 - 9999"/>
         <!-- Telefone Celular com DDD -->
         <br /><br />
         <label for="">Telefone Celular (DDD)</label>
-        <input type="text" name="" id="telefone_celular" />
+        <input type="text" name="" id="telefone_celular" placeholder="(99) 9 9999 - 9999"/>
         <!-- Dependente-->
         <br /><br />
         <label for="">Dependentes</label>
         <table>
-          <input type="text" name="" id="dependente" />
+          <tr>
+            <th>Dependentes</th>
+            <th>Grau de Parentesco</th>
+            <th>Data de Nascimento</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="" id="dependente" />
+            </td>
+            <td>
+              <input type="text" name="" id="dependente_grau" />
+            </td>
+            <td>
+              <input type="date" name="" id="dependente_nascimento" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="" id="dependente" />
+            </td>
+            <td>
+              <input type="text" name="" id="dependente_grau" />
+            </td>
+            <td>
+              <input type="date" name="" id="dependente_nascimento" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="" id="dependente" />
+            </td>
+            <td>
+              <input type="text" name="" id="dependente_grau" />
+            </td>
+            <td>
+              <input type="date" name="" id="dependente_nascimento" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" name="" id="dependente" />
+            </td>
+            <td>
+              <input type="text" name="" id="dependente_grau" />
+            </td>
+            <td>
+              <input type="date" name="" id="dependente_nascimento" />
+            </td>
+          </tr>
         </table>
       </fieldset>
+
       <fieldset>
         <legend>Dados Profissionais</legend>
 
         <!-- Órgão/Empresa-->
-        <br />
+        <br /><br />
         <label for="">Órgão/Empresa: </label>
         <input type="text" placeholder="Insira o órgão/empresa"/>
         <!-- Endereço-->
@@ -113,12 +168,12 @@
         <br />
         <br />
         <label for="">Telefone com DDD: </label>
-        <input type="text" placeholder="(99) 9 9999-9999" />
+        <input type="number" placeholder="(99) 9 9999-9999" />
         <!-- Ramal -->
         <br />
         <br />
         <label for="">Ramal: </label>
-        <input type="text" placeholder="9999"/>
+        <input type="number" placeholder="9999"/>
         <!-- Aposentado :  S / N -->
         <br /><br />
         <label for="">Aposentado: </label>
@@ -132,12 +187,12 @@
         <br />
         <br />
         <label for="">Data de Admissão: </label>
-        <input type="text" placeholder="DD/MM/AAAA" />
+        <input type="date" value="yyyy-mm-dd" placeholder="DD/MM/AAAA" />
         <!-- Data de Filiação-->
         <br />
         <br />
         <label for="">Data de Filiação: </label>
-        <input type="text" placeholder="DD/MM/AAAA"/>
+        <input type="date" value="yyyy-mm-dd" placeholder="DD/MM/AAAA"/>
         <!-- Cargo-->
         <br />
         <br />
@@ -147,7 +202,7 @@
         <br />
         <br />
         <label for="">E-mail: </label>
-        <input type="text" placeholder="exemplo@email.com"/>
+        <input type="email" placeholder="exemplo@email.com" required/>
       </fieldset>
       <br /><br />
       <button>Enviar</button>
